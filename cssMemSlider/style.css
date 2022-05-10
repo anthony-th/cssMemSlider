@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+    color: #ffffff;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('./images/main.jpg');
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.main-container,
+.container-memsclider,
+.text-and-buttons,
+.text,
+.buttons,
+body {
+    display: flex;
+}
+
+.main-container {
+    width: 680px;
+    height: 550px;    
+    background: rgb(3, 1, 23);
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid rgb(45, 105, 113);
+}
+
+.memslider {
+    overflow: hidden;
+}
+
+.container-memsclider {
+    width: 700%;
+    height: 500px;
+}
+
+.memslide {
+    width: 100%;
+    height: 100%;
+    background-repeat: round;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.first {
+    background-image: url('./images/1.jpg');
+}
+
+.second {
+    background-image: url('./images/2.png');
+}
+
+.third {
+    background-image: url('./images/3.png');
+}
+
+.fouth {
+    background-image: url('./images/4.jpg');
+}
+
+.fifth{
+    background-image: url('./images/5.jpg');
+}
+
+.sixth{
+    background-image: url('./images/6.jpg');
+}
+
+.seventh{
+    background-image: url('./images/7.png');
+}
+
+.inputs {
+    display: none;
+}
+
+.text-and-buttons {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    align-items: center;
+}
+
+.buttons {
+    column-gap: 5px;
+    align-items: center;
+}
+
+label{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: rgb(189, 236, 226);
+    border: 2px solid rgb(189, 236, 226);
+}
+
+.pointers {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+.text-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.text,
+.text-for-mems {
+    width: 700%;
+    font-size: 18px;
+}
+
+
+#radio1:checked ~ .memslider .container-memsclider,
+#radio1:checked ~ .text-and-buttons .text-container .text {
+   margin-left: 0;
+}
+#radio2:checked ~ .memslider .container-memsclider,
+#radio2:checked ~ .text-and-buttons .text-container .text {
+   margin-left: -100%;
+}
+#radio3:checked ~ .memslider .container-memsclider,
+#radio3:checked ~ .text-and-buttons .text-container .text {
+   margin-left: -200%;
+}
+#radio4:checked ~ .memslider .container-memsclider,
+#radio4:checked ~ .text-and-buttons .text-container .text  {
+   margin-left: -300%;
+}
+#radio5:checked ~ .memslider .container-memsclider,
+#radio5:checked ~ .text-and-buttons .text-container .text  {
+   margin-left: -400%;
+}
+#radio6:checked ~ .memslider .container-memsclider,
+#radio6:checked ~ .text-and-buttons .text-container .text  {
+   margin-left: -500%;
+}
+#radio7:checked ~ .memslider .container-memsclider,
+#radio7:checked ~ .text-and-buttons .text-container .text  {
+   margin-left: -600%;
+}
+
+#radio1:checked ~ .text-and-buttons .buttons label:nth-child(1),
+#radio2:checked ~ .text-and-buttons .buttons label:nth-child(2),
+#radio3:checked ~ .text-and-buttons .buttons label:nth-child(3),
+#radio4:checked ~ .text-and-buttons .buttons label:nth-child(4),
+#radio5:checked ~ .text-and-buttons .buttons label:nth-child(5),
+#radio6:checked ~ .text-and-buttons .buttons label:nth-child(6),
+#radio7:checked ~ .text-and-buttons .buttons label:nth-child(7){
+  background: transparent;
+}
+
+label:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+}
