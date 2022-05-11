@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
     color: #ffffff;
 }
 
@@ -12,7 +15,10 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; 
+    background-size: cover;
+    -webkit-background-repeat: round;
+    -moz-background-repeat: round;
+    -o-background-repeat: round;
     background-repeat: round;
     align-items: center;
     justify-content: center;
@@ -102,31 +108,31 @@ body,
 
 #radio1:checked ~ .memslider .container-memsclider,
 #radio1:checked ~ .text-and-buttons .text-container .text {
-   margin-left: 0;
+    margin-left: 0;
 }
 #radio2:checked ~ .memslider .container-memsclider,
 #radio2:checked ~ .text-and-buttons .text-container .text {
-   margin-left: -100%;
+    margin-left: -100%;
 }
 #radio3:checked ~ .memslider .container-memsclider,
 #radio3:checked ~ .text-and-buttons .text-container .text {
-   margin-left: -200%;
+    margin-left: -200%;
 }
 #radio4:checked ~ .memslider .container-memsclider,
 #radio4:checked ~ .text-and-buttons .text-container .text  {
-   margin-left: -300%;
+    margin-left: -300%;
 }
 #radio5:checked ~ .memslider .container-memsclider,
 #radio5:checked ~ .text-and-buttons .text-container .text  {
-   margin-left: -400%;
+    margin-left: -400%;
 }
 #radio6:checked ~ .memslider .container-memsclider,
 #radio6:checked ~ .text-and-buttons .text-container .text  {
-   margin-left: -500%;
+    margin-left: -500%;
 }
 #radio7:checked ~ .memslider .container-memsclider,
 #radio7:checked ~ .text-and-buttons .text-container .text  {
-   margin-left: -600%;
+    margin-left: -600%;
 }
 
 #radio1:checked ~ .text-and-buttons .buttons .contour:nth-child(1) .pointers,
@@ -136,7 +142,10 @@ body,
 #radio5:checked ~ .text-and-buttons .buttons .contour:nth-child(5) .pointers,
 #radio6:checked ~ .text-and-buttons .buttons .contour:nth-child(6) .pointers,
 #radio7:checked ~ .text-and-buttons .buttons .contour:nth-child(7) .pointers{
-  background: transparent;
+    background: transparent;
+    -webkit-background: transparent;
+    -moz-background: transparent;
+    -o-background: transparent;
 }
 
 .contour:hover .pointers{
@@ -147,4 +156,32 @@ body,
 .contour:active .pointers{
     background-color: #55cf96;
     border: 0.133rem solid #000000;
+}
+
+
+@media screen and (max-width:768px) {
+    .main-container {
+        width: 17rem;
+        height: auto;
+        row-gap: 1rem;
+        padding: 1rem 1rem 3rem;
+    }
+    .container-memsclider {
+        height: auto;
+    }
+    .text-and-buttons {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .buttons {
+        order: 1;
+    }
+    .text-container {
+        order: 2;
+        width: 100%;
+    }
+    .contour {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
 }
