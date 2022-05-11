@@ -20,19 +20,27 @@ body {
 .text-and-buttons,
 .text,
 .buttons,
-body {
+body,
+label {
     display: flex;
 }
 
+.text,
+.buttons,
+.text-and-buttons,
+label {
+    align-items: center;
+}
+
 .main-container {
-    width: 680px;
-    height: 550px;    
+    width: 55%;
+    height: 58%;    
     background: rgb(3, 1, 23);
-    border-radius: 10px;
+    border-radius: 3%;
     padding: 20px;
     flex-direction: column;
     row-gap: 20px;
-    border: 1px solid rgb(45, 105, 113);
+    border: 0.11rem solid rgb(45, 105, 113);
 }
 
 .memslider {
@@ -85,34 +93,24 @@ body {
 }
 
 .text-and-buttons {
-    align-items: center;
     justify-content: space-between;
 }
 
-.text {
-    align-items: center;
-}
-
-.buttons {
-    column-gap: 5px;
-    align-items: center;
-}
-
 label{
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
+    width: 1.8rem;
+    height: 1.8rem;
     cursor: pointer;
-    background: rgb(189, 236, 226);
-    border: 2px solid rgb(189, 236, 226);
+    justify-content: center;
 }
 
 .pointers {
-    height: 15px;
-    width: 15px;
+    height: 37%;
+    width: 37%;
     border-radius: 50%;
     cursor: pointer;
     display: block;
+    background: rgb(189, 236, 226);
+    border: 2px solid rgb(189, 236, 226);
 }
 
 .text-container {
@@ -156,17 +154,17 @@ label{
    margin-left: -600%;
 }
 
-#radio1:checked ~ .text-and-buttons .buttons label:nth-child(1),
-#radio2:checked ~ .text-and-buttons .buttons label:nth-child(2),
-#radio3:checked ~ .text-and-buttons .buttons label:nth-child(3),
-#radio4:checked ~ .text-and-buttons .buttons label:nth-child(4),
-#radio5:checked ~ .text-and-buttons .buttons label:nth-child(5),
-#radio6:checked ~ .text-and-buttons .buttons label:nth-child(6),
-#radio7:checked ~ .text-and-buttons .buttons label:nth-child(7){
+#radio1:checked ~ .text-and-buttons .buttons label:nth-child(1) .pointers,
+#radio2:checked ~ .text-and-buttons .buttons label:nth-child(2) .pointers,
+#radio3:checked ~ .text-and-buttons .buttons label:nth-child(3) .pointers,
+#radio4:checked ~ .text-and-buttons .buttons label:nth-child(4) .pointers,
+#radio5:checked ~ .text-and-buttons .buttons label:nth-child(5) .pointers,
+#radio6:checked ~ .text-and-buttons .buttons label:nth-child(6) .pointers,
+#radio7:checked ~ .text-and-buttons .buttons label:nth-child(7) .pointers{
   background: transparent;
 }
 
-label:hover {
+label:hover .pointers{
     background-color: #ffffff;
     border: 2px solid #ffffff;
 }
