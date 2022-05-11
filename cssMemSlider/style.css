@@ -15,20 +15,20 @@ body {
     background-repeat: no-repeat;
 }
 
+body,
 .main-container,
 .container-memsclider,
 .text-and-buttons,
 .text,
 .buttons,
-body,
-label {
+.contour {
     display: flex;
 }
 
 .text,
 .buttons,
 .text-and-buttons,
-label {
+.contour {
     align-items: center;
 }
 
@@ -48,7 +48,6 @@ label {
 }
 
 .container-memsclider {
-    width: 700%;
     height: 31rem;
 }
 
@@ -96,7 +95,7 @@ label {
     justify-content: space-between;
 }
 
-label{
+.contour {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
@@ -119,6 +118,7 @@ label{
 }
 
 .text,
+.container-memsclider,
 .text-for-mems {
     width: 700%;
     font-size: 1.133rem;
@@ -154,17 +154,17 @@ label{
    margin-left: -600%;
 }
 
-#radio1:checked ~ .text-and-buttons .buttons label:nth-child(1) .pointers,
-#radio2:checked ~ .text-and-buttons .buttons label:nth-child(2) .pointers,
-#radio3:checked ~ .text-and-buttons .buttons label:nth-child(3) .pointers,
-#radio4:checked ~ .text-and-buttons .buttons label:nth-child(4) .pointers,
-#radio5:checked ~ .text-and-buttons .buttons label:nth-child(5) .pointers,
-#radio6:checked ~ .text-and-buttons .buttons label:nth-child(6) .pointers,
-#radio7:checked ~ .text-and-buttons .buttons label:nth-child(7) .pointers{
+#radio1:checked ~ .text-and-buttons .buttons .contour:nth-child(1) .pointers,
+#radio2:checked ~ .text-and-buttons .buttons .contour:nth-child(2) .pointers,
+#radio3:checked ~ .text-and-buttons .buttons .contour:nth-child(3) .pointers,
+#radio4:checked ~ .text-and-buttons .buttons .contour:nth-child(4) .pointers,
+#radio5:checked ~ .text-and-buttons .buttons .contour:nth-child(5) .pointers,
+#radio6:checked ~ .text-and-buttons .buttons .contour:nth-child(6) .pointers,
+#radio7:checked ~ .text-and-buttons .buttons .contour:nth-child(7) .pointers{
   background: transparent;
 }
 
-label:hover .pointers{
+.contour:hover .pointers{
     background-color: #ffffff;
     border: 0.133rem solid #ffffff;
 }
