@@ -37,9 +37,9 @@ label {
     height: 58%;    
     background: rgb(3, 1, 23);
     border-radius: 3%;
-    padding: 20px;
+    padding: 1.3%;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 3.7%;
     border: 0.11rem solid rgb(45, 105, 113);
 }
 
@@ -49,15 +49,15 @@ label {
 
 .container-memsclider {
     width: 700%;
-    height: 500px;
+    height: 31rem;
 }
 
 .memslide {
     width: 100%;
     height: 100%;
     background-repeat: round;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 
 .first {
@@ -97,8 +97,8 @@ label {
 }
 
 label{
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     justify-content: center;
 }
@@ -110,7 +110,7 @@ label{
     cursor: pointer;
     display: block;
     background: rgb(189, 236, 226);
-    border: 2px solid rgb(189, 236, 226);
+    border: 0.133rem solid rgb(189, 236, 226);
 }
 
 .text-container {
@@ -121,7 +121,7 @@ label{
 .text,
 .text-for-mems {
     width: 700%;
-    font-size: 18px;
+    font-size: 1.133rem;
 }
 
 
@@ -166,5 +166,5 @@ label{
 
 label:hover .pointers{
     background-color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 0.133rem solid #ffffff;
 }
