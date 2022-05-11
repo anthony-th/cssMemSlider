@@ -42,14 +42,14 @@ body,
 }
 
 .main-container {
-    width: 48rem;
-    height: 36rem;    
+    width: 49em;
+    height: 36em;    
     background: rgb(3, 1, 23);
     border-radius: 3%;
-    padding: 1.3%;
+    padding: 1em;
     flex-direction: column;
-    row-gap: 2rem;
-    border: 0.11rem solid rgb(45, 105, 113);
+    row-gap: 2em;
+    border: 0.11em solid rgb(45, 105, 113);
     justify-content: center;
 }
 
@@ -58,7 +58,8 @@ body,
 }
 
 .container-memsclider {
-    height: 31rem;
+    height: 27em;
+    width: 100%;
 }
 
 .memslide {
@@ -77,8 +78,8 @@ body,
 }
 
 .contour {
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
     cursor: pointer;
     justify-content: center;
 }
@@ -90,7 +91,7 @@ body,
     cursor: pointer;
     display: block;
     background: rgb(189, 236, 226);
-    border: 0.133rem solid rgb(189, 236, 226);
+    border: 0.133em solid rgb(189, 236, 226);
 }
 
 .text-container {
@@ -98,13 +99,15 @@ body,
     overflow: hidden;
 }
 
-.text,
 .container-memsclider,
-.text-for-mems {
-    width: 700%;
-    font-size: 1.133rem;
+.text {
+    width: calc(100% * 7);
 }
 
+.text-for-mems {
+    width: calc(100% * 7);
+    font-size: 1.133em;
+}
 
 #radio1:checked ~ .memslider .container-memsclider,
 #radio1:checked ~ .text-and-buttons .text-container .text {
@@ -150,28 +153,29 @@ body,
 
 .contour:hover .pointers{
     background-color: #ffffff;
-    border: 0.133rem solid #ffffff;
+    border: 0.133em solid #ffffff;
 }
 
 .contour:active .pointers{
     background-color: #55cf96;
-    border: 0.133rem solid #000000;
+    border: 0.133em solid #000000;
 }
 
 
 @media screen and (max-width:768px) {
     .main-container {
-        width: 17rem;
+        width: 17em;
         height: auto;
-        row-gap: 1rem;
-        padding: 1rem 1rem 4rem;
+        row-gap: 1em;
+        padding: 1em 1em 4em;
     }
     .container-memsclider {
+        max-width: 100%;
         height: auto;
     }
     .text-and-buttons {
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: 1em;
     }
     .buttons {
         order: 1;
@@ -181,7 +185,7 @@ body,
         width: 100%;
     }
     .contour {
-        width: 1.3rem;
-        height: 1.3rem;
+        width: 1.3em;
+        height: 1.3em;
     }
 }
