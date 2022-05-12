@@ -45,9 +45,8 @@ body,
 }
 
 .main-container {
-    width: 49em;
-    /* height: 36em;     */
-    background: rgb(3, 1, 23);
+    width: 48em;
+    background: rgba(3, 1, 23, 0.96);
     border-radius: 3%;
     padding: 2em;
     flex-direction: column;
@@ -170,10 +169,9 @@ body,
     border: 0.133em solid #000000;
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:888px) {
     .main-container {
-        width: 17em;
+        max-width: 80%;
         height: auto;
         row-gap: 1em;
         padding: 1em 1em 4em;
@@ -206,3 +204,17 @@ body,
     }
 }
 
+@media screen and (max-width:320px) {
+    .main-container {
+        width: 20em;
+    }
+    .container-memsclider {
+        width: 100%;
+    }
+    .text-container {
+        width: 100%;
+    }
+    .memslide {
+        width: 100%;
+    }
+}
