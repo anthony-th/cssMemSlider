@@ -218,3 +218,20 @@ body,
         width: 100%;
     }
 }
+
+
+@-moz-document url-prefix() {
+    @media screen and (max-width:888px) {
+        .container-memsclider {
+            max-width: max-content;
+            width: calc(100% * 7);
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        .container-memsclider {
+            max-width: max-content;
+            width: calc(100% * 7);
+        }
+    }
+}
