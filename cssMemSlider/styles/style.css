@@ -219,7 +219,6 @@ body,
     }
 }
 
-
 @-moz-document url-prefix() {
     @media screen and (max-width:888px) {
         .container-memsclider {
