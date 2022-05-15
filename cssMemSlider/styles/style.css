@@ -69,6 +69,7 @@ body,
     max-height: 100%;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
+    object-fit: contain;
 }
 
 .inputs {
