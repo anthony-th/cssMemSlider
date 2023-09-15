@@ -159,11 +159,6 @@ body,
     -o-background: transparent;
 }
 
-.contour:hover .pointers{
-    background-color: #ffffff;
-    border: 0.133em solid #ffffff;
-}
-
 .contour:active .pointers{
     background-color: #55cf96;
     border: 0.133em solid #000000;
@@ -214,6 +209,13 @@ body,
     .memslide {
         width: 100%;
     }
+}
+
+@media (hover: hover) {
+  .contour:hover .pointers {
+    background-color: #ffffff;
+    border: 0.133em solid #ffffff;
+  }
 }
 
 @-moz-document url-prefix() {
