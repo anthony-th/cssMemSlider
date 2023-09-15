@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+    box-sizing: border-box;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    color: #ffffff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/main.webp');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: round;
+    -moz-background-repeat: round;
+    -o-background-repeat: round;
+    background-repeat: round;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body,
+.main-container,
+.container-memsclider,
+.text-and-buttons,
+.text,
+.buttons,
+.contour {
+    display: flex;
+}
+
+.text,
+.buttons,
+.text-and-buttons,
+.contour {
+    align-items: center;
+}
+
+.main-container {
+    width: 46.5em;
+    background: rgba(3, 1, 23, 0.96);
+    border-radius: 3%;
+    padding: 2em 2em 4em;
+    flex-direction: column;
+    row-gap: 2em;
+    border: 0.11em solid rgb(45, 105, 113);
+    justify-content: center;
+}
+
+.memslider {
+    overflow: hidden;
+}
+
+.container-memsclider {
+    height: 27em;
+    width: 100%;
+}
+
+.memslide {
+    width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    object-fit: cover;
+}
+
+.inputs {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    order: 5;
+}
+
+.text-and-buttons {
+    justify-content: space-between;
+}
+
+.contour {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.pointers {
+    height: 37%;
+    width: 37%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    background: rgb(189, 236, 226);
+    border: 0.133em solid rgb(189, 236, 226);
+}
+
+.text-container {
+    overflow: hidden;
+}
+
+.container-memsclider,
+.text {
+    width: calc(100% * 7);
+}
+
+.text-for-mems {
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    width: calc(100% * 7);
+    font-size: 1.133em;
+}
+
+#radio1:checked ~ .main-container .memslider .container-memsclider,
+#radio1:checked ~ .text-and-buttons .text-container .text {
+    margin-left: 0;
+}
+#radio2:checked ~ .main-container .memslider .container-memsclider,
+#radio2:checked ~ .main-container .text-and-buttons .text-container .text {
+    margin-left: -100%;
+}
+#radio3:checked ~ .main-container .memslider .container-memsclider,
+#radio3:checked ~ .main-container .text-and-buttons .text-container .text {
+    margin-left: -200%;
+}
+#radio4:checked ~ .main-container .memslider .container-memsclider,
+#radio4:checked ~ .main-container .text-and-buttons .text-container .text  {
+    margin-left: -300%;
+}
+#radio5:checked ~ .main-container .memslider .container-memsclider,
+#radio5:checked ~ .main-container .text-and-buttons .text-container .text  {
+    margin-left: -400%;
+}
+#radio6:checked ~ .main-container .memslider .container-memsclider,
+#radio6:checked ~ .main-container .text-and-buttons .text-container .text  {
+    margin-left: -500%;
+}
+#radio7:checked ~ .main-container .memslider .container-memsclider,
+#radio7:checked ~ .main-container .text-and-buttons .text-container .text  {
+    margin-left: -600%;
+}
+
+#radio1:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(1) .pointers,
+#radio2:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(2) .pointers,
+#radio3:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(3) .pointers,
+#radio4:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(4) .pointers,
+#radio5:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(5) .pointers,
+#radio6:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(6) .pointers,
+#radio7:checked ~ .main-container .text-and-buttons .buttons .contour:nth-child(7) .pointers{
+    background: transparent;
+    -webkit-background: transparent;
+    -moz-background: transparent;
+    -o-background: transparent;
+}
+
+.contour:active .pointers{
+    background-color: #55cf96;
+    border: 0.133em solid #000000;
+}
+
+@media screen and (max-width:888px) {
+    .main-container {
+        max-width: 80%;
+        height: auto;
+        row-gap: 1em;
+        padding: 1em 1em 2em;
+    }
+    .container-memsclider {
+        max-width: 100%;
+        height: auto;
+    }
+    .text-and-buttons {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+    .buttons {
+        order: 1;
+    }
+    .text-container {
+        order: 2;
+        width: 100%;
+    }
+    .contour {
+        width: 1.3em;
+        height: 1.3em;
+    }
+    .memslide {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main-container {
+        width: 20em;
+    }
+    .container-memsclider {
+        width: 100%;
+    }
+    .text-container {
+        width: 100%;
+    }
+    .memslide {
+        width: 100%;
+    }
+}
+
+@media (hover: hover) {
+  .contour:hover .pointers {
+    background-color: #ffffff;
+    border: 0.133em solid #ffffff;
+  }
+}
+
+@-moz-document url-prefix() {
+    @media screen and (max-width:888px) {
+        .container-memsclider {
+            max-width: max-content;
+            width: calc(100% * 7);
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        .container-memsclider {
+            max-width: max-content;
+            width: calc(100% * 7);
+        }
+    }
+}
