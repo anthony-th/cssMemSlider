@@ -49,7 +49,7 @@ body,
     width: 46.5em;
     background: rgba(3, 1, 23, 0.96);
     border-radius: 3%;
-    padding: 2em;
+    padding: 2em 2em 4em;
     flex-direction: column;
     row-gap: 2em;
     border: 0.11em solid rgb(45, 105, 113);
@@ -70,7 +70,7 @@ body,
     max-height: 100%;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .inputs {
@@ -82,7 +82,6 @@ body,
 
 .text-and-buttons {
     justify-content: space-between;
-    margin-bottom: 2em;
 }
 
 .contour {
@@ -103,7 +102,6 @@ body,
 }
 
 .text-container {
-    width: 50%;
     overflow: hidden;
 }
 
@@ -176,7 +174,7 @@ body,
         max-width: 80%;
         height: auto;
         row-gap: 1em;
-        padding: 1em 1em 4em;
+        padding: 1em 1em 2em;
     }
     .container-memsclider {
         max-width: 100%;
@@ -200,9 +198,6 @@ body,
     .memslide {
         max-width: 100%;
         height: auto;
-    }
-    .text-and-buttons {
-        margin-bottom: 0;
     }
 }
 
